@@ -1,0 +1,556 @@
+@font-face {
+    src: url(fonts/Metrophobic-Regular.ttf);
+    font-family: metro;
+}
+
+@font-face {
+    src: url(fonts/Rajdhani-Regular.ttf);
+    font-family: charm;
+}
+
+.signature {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    color: #ccc;
+    writing-mode: vertical-lr;
+    bottom: 2vh;
+    right: 1.5vh;
+    letter-spacing: .15vh;
+    color: #555;
+    font-size: 1.8vh;
+    transform: rotate(180deg);
+    font-family: charm !important;
+}
+
+.sig-D {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 2.25vh;
+    font-size: 2.6vh;
+    display: block;
+    height: 2.7vh;
+    width: 2.7vh;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: .5vh;
+}
+
+.sig-line {
+    background: #ccc;
+    height: 1px;
+    width: 2.7vh;
+    margin-top: 1vh;
+}
+
+.signature span {
+    color: #ccc;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.9vh;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.9vh;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.9vh;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.9vh;
+}
+
+body {
+    overflow: hidden;
+    font-family: metro;
+}
+
+.background-img {
+    position: absolute;
+    background-image: url("img/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.shade {
+    background: linear-gradient(90deg, rgba(0, 0, 0, .93) 0%, rgba(0, 0, 0, 0.81) 50%, rgba(0, 0, 0, .91) 100%);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.dot-error {
+    position: absolute;
+    background: rgba(153, 24, 24, 0.322);
+    height: 0;
+    /*50px*/
+    opacity: 0;
+    width: 40%;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    color: #ccc;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 30%;
+    border-bottom-left-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
+    transition: opacity .3s ease-out;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+    width: 100vw;
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.add-course {
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-course-bg {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 95, 255, 0.09845945214023111) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.add-course-container {
+    width: 100%;
+}
+
+.new-course-name {
+    display: block;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #aaa;
+    font-size: 2.5vh;
+    font-family: metro;
+    letter-spacing: .5vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+    height: 5vh;
+    margin: 0 auto 9vh auto;
+}
+
+.sec-title {
+    display: block;
+    color: #ddd;
+    font-size: 2.7vh;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.6vh;
+}
+
+.line {
+    background: #444;
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    flex-flow: row nowrap;
+    color: #ccc;
+    margin-top: 4.3vh;
+    margin-bottom: 10vh;
+}
+
+.sec {
+    height: 4.5vh;
+    width: 4.5vh;
+    border: solid 1px #ccc;
+    border-radius: 0.4vh;
+    text-align: center;
+    font-size: 2.8vh;
+    line-height: 4.5vh;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.sec:hover {
+    background: #ddd !important;
+    color: #333 !important;
+}
+
+.days-hours-container {
+    margin-top: 2.5vh;
+    width: 100%;
+    color: #ccc;
+}
+
+.day-hour {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    flex-flow: row nowrap;
+    color: #ccc;
+    margin-top: 0.7vh;
+}
+
+.day-name {
+    height: 2.8vh;
+    width: 2.8vh;
+    border-right: solid 1px #555;
+    text-align: center;
+    font-size: 1.8vh;
+    line-height: 2.8vh;
+    padding-right: 1.3vh;
+}
+
+.hour {
+    height: 3.3vh;
+    width: 3.3vh;
+    border-radius: .3vh;
+    text-align: center;
+    font-size: 1.8vh;
+    line-height: 3.3vh;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.hour:hover {
+    background: #ddd !important;
+    color: #333 !important;
+}
+
+.btn-add, .btn-create {
+    display: block;
+    margin: auto;
+    outline: none;
+    background: transparent;
+    border: solid 1px #ddd;
+    color: #ddd;
+    font-size: 1.8vh;
+    margin-top: 7vh;
+    box-sizing: border-box;
+    padding: 0.9vh 2vh;
+    border-radius: 0.3vh;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    letter-spacing: 0.2vh;
+}
+
+.btn-add:hover, .btn-create:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.course-list-container {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 0, 0, 0.1292717770702031) 100%);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-list {
+    width: 100%;
+}
+
+.labels {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: #777;
+    width: 70%;
+    margin: auto;
+    font-size: 2vh;
+    letter-spacing: .5px;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+.list {
+    color: #ddd;
+    height: 60.1vh;
+    width: calc(70% + 4.8vh);
+    margin: auto;
+    font-size: 2vh;
+    overflow-y: scroll;
+    padding-left: 4.8vh;
+    scrollbar-width: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5vh;
+}
+
+.btn-delete {
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    width: 2.8vh;
+    height: 2.8vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+
+.btn-delete:hover {
+    background: #ccc;
+}
+
+.btn-delete:hover .bd2, .btn-delete:hover .bd1 {
+    background: #222;
+}
+
+.bd1, .bd2 {
+    position: absolute;
+    width: 2vh;
+    height: 0.2vh;
+    border-radius: 0.1vh;
+    background: #ccc;
+}
+
+.bd1 {
+    transform: rotate(45deg);
+}
+
+.bd2 {
+    transform: rotate(-45deg);
+}
+
+.list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #ddd;
+    height: 4vh;
+    width: 93%;
+    line-height: 4vh;
+    border-radius: 0.3vh;
+}
+
+.line2 {
+    height: 60%;
+    width: 1px !important;
+    background: #777;
+}
+
+.list-course-name {
+    width: 25%;
+    text-align: center;
+}
+
+.list-hours {
+    width: 57%;
+    text-align: center;
+}
+
+.small-font {
+    font-size: 1.6vh;
+}
+
+.list-info {
+    display: block;
+    margin: auto;
+    font-size: 2.4vh;
+    color: #555;
+    text-align: center;
+    border: solid 1px #555;
+    border-radius: 0.3vh;
+    width: 80%;
+    padding: 6vh 2vh;
+    margin-top: 10vh;
+    box-sizing: border-box;
+    line-height: 4vh;
+}
+
+/*TIMETABLE*/
+
+.timetable-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 0;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    color: #ccc;
+}
+
+.timetable {
+    height: 97%;
+    width: 97%;
+    position: relative;
+    margin-top: 3%;
+}
+
+.btn-close {
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    height: 4vh;
+    background-color: transparent;
+    width: 4vh;
+    background-image: url("img/icons/close.png");
+    background-position: center;
+    background-size: cover;
+    transition: all .3s ease-out;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background-image: url("img/icons/close-dark.png");
+    background-color: #ccc;
+}
+
+.table-count {
+    display: block;
+    color: #111;
+    border-radius: 20px;
+    margin: auto;
+    background: #ccc;
+    height: 35px;
+    width: 350px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: .5px;
+    font-size: 18px;
+    margin-bottom: 2.5vh;
+}
+
+.timetables {
+    position: absolute;
+    width: 100%;
+    height: 82vh;
+    margin: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.timetables::-webkit-scrollbar {
+    display: none;
+}
+
+.timetable-table {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 4vh;
+    background: linear-gradient(90deg, rgba(0, 8, 24, 0.65) 0%, rgba(40, 21, 0, 0.65) 100%);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 29px;
+}
+
+.table-days {
+    font-size: 13.5px;
+}
+
+.table-space {
+    height: 13.5px !important;
+    margin-top: 0 !important;
+    margin-bottom: 38px !important;
+    font-size: 20px !important;
+}
+
+.table-space div {
+    background: #ccc !important;
+    color: #333 !important;
+    min-width: 27px !important;
+    height: 35px !important;
+    line-height: 35px;
+    border-radius: 10% !important;
+    margin-top: 20px !important;
+    padding: 0 4px;
+}
+
+.table-days div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.timetable-items {
+    display: block;
+}
+
+.timetable-entry {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13.5px;
+}
+
+.timetable-hours {
+    margin-bottom: 16px;
+    line-height: 19px;
+}
+
+.timetable-entry div {
+    width: 80px;
+    text-align: center;
+}
+
+.timetable-day {
+    margin-top: 15px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.table-line {
+    height: 100%;
+}

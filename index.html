@@ -1,0 +1,367 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Course List Planner</title>
+</head>
+<body>
+
+    <div class="signature">
+        <div class="sig-D">D</div>
+        <p><span>esigned by</span> Bilal KABAŞ</p>
+        <div class="sig-line"></div>
+    </div>
+
+    <div class="background-img">
+        <div class="shade"></div>
+    </div>
+
+    <div class="dot-error"></div>
+
+    <section class="main-container">
+        
+        <section class="add-course">
+        
+            <div class="add-course-bg"></div>
+            <div class="add-course-container">
+                <label class="sec-title">Course Name</label>
+                <div class="line"></div>
+                <input id="course-name" class="new-course-name" type="text" placeholder="Enter Course Name Here" autofocus/>
+                <label class="sec-title">Section</label>
+                <div class="line"></div>
+                <div class="sections">
+                    <div id="sec1" class="sec">1</div>
+                    <div id="sec2" class="sec">2</div>
+                    <div id="sec3" class="sec">3</div>
+                    <div id="sec4" class="sec">4</div>
+                    <div id="sec5" class="sec">5</div>
+                    <div id="sec6" class="sec">6</div>
+                    <div id="sec7" class="sec">7</div>
+                </div>
+                <label class="sec-title">Days & Hours</label>
+                <div class="line"></div>
+                <div class="days-hours-container">
+                    <div class="day-hour">
+                        <div class="day-name">Mo</div>
+                        <div id="D1" data-day="M8" class="hour">8</div>
+                        <div id="D2" data-day="M9" class="hour">9</div>
+                        <div id="D3" data-day="M10" class="hour">10</div>
+                        <div id="D4" data-day="M11" class="hour">11</div>
+                        <div id="D5" data-day="M12" class="hour">12</div>
+                        <div id="D6" data-day="M13" class="hour">13</div>
+                        <div id="D7" data-day="M14" class="hour">14</div>
+                        <div id="D8" data-day="M15" class="hour">15</div>
+                        <div id="D9" data-day="M16" class="hour">16</div>
+                        <div id="D10" data-day="M17" class="hour">17</div>
+                        <div id="D11" data-day="M18" class="hour">18</div>
+                        <div id="D12" data-day="M19" class="hour">19</div>
+                        <div id="D13" data-day="M20" class="hour">20</div>
+                    </div>
+                    <div class="day-hour">
+                        <div class="day-name">Tu</div>
+                        <div id="D14" data-day="T8" class="hour">8</div>
+                        <div id="D15" data-day="T9" class="hour">9</div>
+                        <div id="D16" data-day="T10" class="hour">10</div>
+                        <div id="D17" data-day="T11" class="hour">11</div>
+                        <div id="D18" data-day="T12" class="hour">12</div>
+                        <div id="D19" data-day="T13" class="hour">13</div>
+                        <div id="D20" data-day="T14" class="hour">14</div>
+                        <div id="D21" data-day="T15" class="hour">15</div>
+                        <div id="D22" data-day="T16" class="hour">16</div>
+                        <div id="D23" data-day="T17" class="hour">17</div>
+                        <div id="D24" data-day="T18" class="hour">18</div>
+                        <div id="D25" data-day="T19" class="hour">19</div>
+                        <div id="D26" data-day="T20" class="hour">20</div>
+                    </div>
+                    <div class="day-hour">
+                        <div class="day-name">We</div>
+                        <div id="D27" data-day="W8" class="hour">8</div>
+                        <div id="D28" data-day="W9" class="hour">9</div>
+                        <div id="D29" data-day="W10" class="hour">10</div>
+                        <div id="D30" data-day="W11" class="hour">11</div>
+                        <div id="D31" data-day="W12" class="hour">12</div>
+                        <div id="D32" data-day="W13" class="hour">13</div>
+                        <div id="D33" data-day="W14" class="hour">14</div>
+                        <div id="D34" data-day="W15" class="hour">15</div>
+                        <div id="D35" data-day="W16" class="hour">16</div>
+                        <div id="D36" data-day="W17" class="hour">17</div>
+                        <div id="D37" data-day="W18" class="hour">18</div>
+                        <div id="D38" data-day="W19" class="hour">19</div>
+                        <div id="D39" data-day="W20" class="hour">20</div>
+                    </div>
+                    <div class="day-hour">
+                        <div class="day-name">Th</div>
+                        <div id="D40" data-day="Th8" class="hour">8</div>
+                        <div id="D41" data-day="Th9" class="hour">9</div>
+                        <div id="D42" data-day="Th10" class="hour">10</div>
+                        <div id="D43" data-day="Th11" class="hour">11</div>
+                        <div id="D44" data-day="Th12" class="hour">12</div>
+                        <div id="D45" data-day="Th13" class="hour">13</div>
+                        <div id="D46" data-day="Th14" class="hour">14</div>
+                        <div id="D47" data-day="Th15" class="hour">15</div>
+                        <div id="D48" data-day="Th16" class="hour">16</div>
+                        <div id="D49" data-day="Th17" class="hour">17</div>
+                        <div id="D50" data-day="Th18" class="hour">18</div>
+                        <div id="D51" data-day="Th19" class="hour">19</div>
+                        <div id="D52" data-day="Th20" class="hour">20</div>
+                    </div>
+                    <div class="day-hour">
+                        <div class="day-name">Fr</div>
+                        <div id="D53" data-day="F8" class="hour">8</div>
+                        <div id="D54" data-day="F9" class="hour">9</div>
+                        <div id="D55" data-day="F10" class="hour">10</div>
+                        <div id="D56" data-day="F11" class="hour">11</div>
+                        <div id="D57" data-day="F12" class="hour">12</div>
+                        <div id="D58" data-day="F13" class="hour">13</div>
+                        <div id="D59" data-day="F14" class="hour">14</div>
+                        <div id="D60" data-day="F15" class="hour">15</div>
+                        <div id="D61" data-day="F16" class="hour">16</div>
+                        <div id="D62" data-day="F17" class="hour">17</div>
+                        <div id="D63" data-day="F18" class="hour">18</div>
+                        <div id="D64" data-day="F19" class="hour">19</div>
+                        <div id="D65" data-day="F20" class="hour">20</div>
+                    </div>
+                </div>
+                <button id="btn-add" class="btn-add">Add to the List</button>
+            </div>
+        </section>
+        
+        <section class="course-list-container">
+        
+            <section class="course-list">
+                <label class="sec-title">Course List</label>
+                <div class="line"></div>
+                <div class="labels">
+                    <div class="list-course-name">Name</div>
+                    <div class="list-section">Section</div>
+                    <div class="list-hours">Days & Hours</div>
+                </div>
+                <div class="list">
+
+                    <div class="list-info">
+                        <p>Courses you added will be listed here.</p>
+                    </div>
+
+                    <!--
+                    <div class="list-container">
+                        <div class="list-item">
+                            <div class="list-course-name">COMP101</div>
+                            <div class="line2"></div>
+                            <div class="list-section">3</div>
+                            <div class="line2"></div>
+                            <div class="list-hours small-font">F9 F10 F15 F16 F17</div>
+                        </div>
+                        <div class="btn-delete">
+                            <div class="bd1"></div>
+                            <div class="bd2"></div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
+                <button id="btn-create" class="btn-create">Create Timetable</button>
+
+            </section>
+
+        </section>
+
+    </section>
+
+    <section class="timetable-container">
+        <div class="timetable">
+
+            <div class="sec-title">Timetable</div>
+            <div class="line"></div>
+            <div class="table-count">No result Found !</div>
+            <div class="btn-close"></div>
+
+            <div class="timetables">
+                <!--
+                <div class="timetable-table">
+                
+                    <div class="table-days">
+                        <div class="table-space">
+                            <div>
+                                1
+                            </div>
+                        </div>
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                        <div>Thursday</div>
+                        <div>Friday</div>
+                    </div>
+                
+                    <div class="timetable-items">
+                
+                        <div class="timetable-entry timetable-hours">
+                            <div>Period 1</div>
+                            <div>Period 2</div>
+                            <div>Period 3</div>
+                            <div>Period 4</div>
+                            <div>Period 5</div>
+                            <div>Period 6</div>
+                            <div>Period 7</div>
+                            <div>Period 8</div>
+                            <div>Period 9</div>
+                            <div>Period 10</div>
+                            <div>Period 11</div>
+                            <div>Period 12</div>
+                            <div>Period 13</div>
+                        </div>
+                
+                        <div class="timetable-entry timetable-day">
+                            <div>MATH</div> 
+                            <div class="line2 table-line"></div>
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                        </div>
+
+                        <div class="timetable-entry timetable-day">
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                        </div>
+
+                        <div class="timetable-entry timetable-day">
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                        </div>
+
+                        <div class="timetable-entry timetable-day">
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                        </div>
+
+                        <div class="timetable-entry timetable-day">
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>MATH</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>ENG</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>-</div>
+                            <div class="line2 table-line"></div>
+                            <div>ME</div>
+                        </div>
+                
+                    </div>
+                
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
